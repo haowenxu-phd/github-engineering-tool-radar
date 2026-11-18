@@ -1,0 +1,478 @@
+{
+ "version": "0.1-draft",
+ "description": "Teaching taxonomy for open-source tools in Digital Engineering and Systems Engineering. DRAFT for lecturer review: rename, merge or add entries freely; ids are what the LLM returns, labels are what students see.",
+ "categories": [
+  {
+   "id": "mbse_requirements",
+   "label": "MBSE, requirements & architecture",
+   "description": "Model-based systems engineering, requirements management, system architecture and trade studies.",
+   "subcategories": [
+    {
+     "id": "sysml_modelling",
+     "label": "SysML / MBSE modelling tools"
+    },
+    {
+     "id": "requirements_mgmt",
+     "label": "Requirements management & traceability"
+    },
+    {
+     "id": "architecture_frameworks",
+     "label": "Architecture frameworks & diagramming (C4, arc42, DoDAF-style)"
+    },
+    {
+     "id": "trade_studies",
+     "label": "Trade studies, decision analysis & optimisation of system concepts"
+    },
+    {
+     "id": "safety_reliability",
+     "label": "Safety, reliability & risk analysis (FMEA, FTA, STPA)"
+    }
+   ]
+  },
+  {
+   "id": "cad_geometry",
+   "label": "CAD & geometry",
+   "description": "Creating and processing engineering geometry.",
+   "subcategories": [
+    {
+     "id": "parametric_cad",
+     "label": "Parametric / GUI CAD (FreeCAD, Onshape add-ons, SolidWorks tools)"
+    },
+    {
+     "id": "code_cad",
+     "label": "Code-CAD (CadQuery, build123d, OpenSCAD)"
+    },
+    {
+     "id": "ai_cad",
+     "label": "AI / text-to-CAD & generative design"
+    },
+    {
+     "id": "mesh_processing",
+     "label": "Mesh processing & geometry kernels"
+    },
+    {
+     "id": "cad_interop",
+     "label": "CAD data exchange (STEP, IFC, glTF, USD)"
+    }
+   ]
+  },
+  {
+   "id": "simulation_analysis",
+   "label": "Simulation & analysis",
+   "description": "Physics-based and data-driven engineering analysis.",
+   "subcategories": [
+    {
+     "id": "cfd",
+     "label": "Computational fluid dynamics"
+    },
+    {
+     "id": "fea_structural",
+     "label": "Finite element / structural analysis"
+    },
+    {
+     "id": "multiphysics",
+     "label": "Multiphysics & coupled simulation"
+    },
+    {
+     "id": "system_dynamics",
+     "label": "System-level modelling (Modelica, FMI, Simulink-like, discrete-event)"
+    },
+    {
+     "id": "physics_ml",
+     "label": "Physics-informed ML & surrogate models"
+    },
+    {
+     "id": "optimisation_uq",
+     "label": "Design optimisation & uncertainty quantification"
+    }
+   ]
+  },
+  {
+   "id": "realtime_3d_xr",
+   "label": "Real-time 3D, game engines & XR",
+   "description": "Interactive visualisation of engineering systems on the web, in game engines and in XR.",
+   "subcategories": [
+    {
+     "id": "web_3d",
+     "label": "Web 3D (WebGPU, WebGL, three.js, Babylon.js)"
+    },
+    {
+     "id": "game_engine",
+     "label": "Game engines & engine plugins (Unreal, Unity, Godot)"
+    },
+    {
+     "id": "rendering",
+     "label": "Rendering & scientific visualisation"
+    },
+    {
+     "id": "xr",
+     "label": "AR / VR / XR"
+    }
+   ]
+  },
+  {
+   "id": "content_automation",
+   "label": "3D content creation & automation",
+   "description": "Producing 3D assets and scenes, increasingly with scripting and AI.",
+   "subcategories": [
+    {
+     "id": "blender_addon",
+     "label": "Blender add-ons & Python automation"
+    },
+    {
+     "id": "procedural_generation",
+     "label": "Procedural generation"
+    },
+    {
+     "id": "ai_3d_generation",
+     "label": "AI 3D generation (text/image-to-3D, AI texturing)"
+    },
+    {
+     "id": "asset_pipeline",
+     "label": "Asset pipelines & format conversion"
+    }
+   ]
+  },
+  {
+   "id": "reality_capture_geospatial",
+   "label": "Reality capture, geospatial & built environment",
+   "description": "Capturing and modelling the physical world: scans, maps, buildings and infrastructure.",
+   "subcategories": [
+    {
+     "id": "photogrammetry_splatting",
+     "label": "Photogrammetry, Gaussian splatting & NeRF"
+    },
+    {
+     "id": "point_cloud_lidar",
+     "label": "Point clouds & LiDAR processing"
+    },
+    {
+     "id": "gis_3d_tiles",
+     "label": "GIS, terrain & 3D Tiles / Cesium"
+    },
+    {
+     "id": "bim_aec",
+     "label": "BIM & architecture / engineering / construction"
+    }
+   ]
+  },
+  {
+   "id": "robotics_autonomy",
+   "label": "Robotics & autonomous systems",
+   "description": "Software for robots, drones and autonomous vehicles.",
+   "subcategories": [
+    {
+     "id": "robot_middleware",
+     "label": "Robot middleware & frameworks (ROS 2)"
+    },
+    {
+     "id": "robot_simulation",
+     "label": "Robot simulation (Gazebo, Isaac, MuJoCo)"
+    },
+    {
+     "id": "uav_drones",
+     "label": "UAV / drone autopilots & ground control"
+    },
+    {
+     "id": "perception_slam",
+     "label": "Perception, SLAM & localisation"
+    },
+    {
+     "id": "robot_learning",
+     "label": "Robot learning & embodied AI"
+    }
+   ]
+  },
+  {
+   "id": "iot_digital_twin",
+   "label": "IoT, data & digital twin platforms",
+   "description": "Connecting physical assets to data, the backbone of operational digital twins.",
+   "subcategories": [
+    {
+     "id": "industrial_protocols",
+     "label": "Industrial protocols & connectivity (OPC UA, MQTT, Modbus)"
+    },
+    {
+     "id": "timeseries_pipelines",
+     "label": "Time-series databases & data pipelines"
+    },
+    {
+     "id": "edge_computing",
+     "label": "Edge computing & gateways"
+    },
+    {
+     "id": "monitoring_dashboards",
+     "label": "Monitoring, SCADA & dashboards"
+    },
+    {
+     "id": "digital_twin_platform",
+     "label": "Digital twin platforms & frameworks"
+    }
+   ]
+  },
+  {
+   "id": "embedded_electronics",
+   "label": "Embedded systems & electronics",
+   "description": "Hardware design and the software that runs on it.",
+   "subcategories": [
+    {
+     "id": "pcb_eda",
+     "label": "PCB design & EDA (KiCad tools)"
+    },
+    {
+     "id": "firmware_mcu",
+     "label": "Firmware & microcontrollers (ESP32, Arduino, STM32)"
+    },
+    {
+     "id": "fpga_hdl",
+     "label": "FPGA & hardware description languages"
+    },
+    {
+     "id": "hil_sil_testing",
+     "label": "Hardware/software-in-the-loop testing"
+    }
+   ]
+  },
+  {
+   "id": "ai_engineering",
+   "label": "AI for engineering",
+   "description": "AI models and agents applied to engineering work.",
+   "subcategories": [
+    {
+     "id": "local_llm_runtime",
+     "label": "Local / on-device LLM runtimes"
+    },
+    {
+     "id": "browser_llm",
+     "label": "In-browser LLMs (WebGPU / WASM)"
+    },
+    {
+     "id": "engineering_agents_mcp",
+     "label": "Agents & MCP servers that drive engineering software"
+    },
+    {
+     "id": "engineering_ml",
+     "label": "ML models & datasets for engineering data"
+    },
+    {
+     "id": "ai_dev_tools",
+     "label": "General AI developer tools (coding assistants, LLM frameworks)"
+    }
+   ]
+  },
+  {
+   "id": "general_software",
+   "label": "General software (not engineering-specific)",
+   "description": "Use when the tool has no specific engineering application. Lets the pipeline flag noise from broad crawl seeds.",
+   "subcategories": [
+    {
+     "id": "general_dev_tool",
+     "label": "General developer tool or library"
+    },
+    {
+     "id": "other",
+     "label": "Other / unclear"
+    }
+   ]
+  }
+ ],
+ "lifecycle_phases": [
+  {
+   "id": "concept_requirements",
+   "label": "Concept & requirements",
+   "description": "Stakeholder needs, requirements, concept of operations (left top of the V)."
+  },
+  {
+   "id": "architecture_design",
+   "label": "Architecture & system design",
+   "description": "Functional/physical architecture, MBSE models, interfaces."
+  },
+  {
+   "id": "detailed_design",
+   "label": "Detailed design",
+   "description": "CAD, electronics design, software design of components."
+  },
+  {
+   "id": "analysis_simulation",
+   "label": "Analysis & simulation",
+   "description": "Virtual testing and performance prediction before building."
+  },
+  {
+   "id": "implementation_integration",
+   "label": "Implementation & integration",
+   "description": "Building, coding, manufacturing, assembling and integrating subsystems (bottom/right of the V)."
+  },
+  {
+   "id": "verification_validation",
+   "label": "Verification & validation",
+   "description": "Testing against requirements: HIL/SIL, test automation, V&V of models."
+  },
+  {
+   "id": "operations_sustainment",
+   "label": "Operations & sustainment",
+   "description": "Monitoring, maintenance, operational digital twins, end of life."
+  },
+  {
+   "id": "visualisation_communication",
+   "label": "Visualisation & communication (cross-cutting)",
+   "description": "Communicating designs and data to stakeholders across all phases."
+  }
+ ],
+ "disciplines": [
+  {
+   "id": "systems",
+   "label": "Systems engineering"
+  },
+  {
+   "id": "mechanical",
+   "label": "Mechanical & manufacturing"
+  },
+  {
+   "id": "aerospace",
+   "label": "Aerospace & aviation"
+  },
+  {
+   "id": "civil_structural",
+   "label": "Civil, structural & construction"
+  },
+  {
+   "id": "electrical_electronic",
+   "label": "Electrical & electronic"
+  },
+  {
+   "id": "mechatronics_robotics",
+   "label": "Mechatronics & robotics"
+  },
+  {
+   "id": "software_computing",
+   "label": "Software & computing"
+  },
+  {
+   "id": "geospatial_surveying",
+   "label": "Geospatial & surveying"
+  },
+  {
+   "id": "defence",
+   "label": "Defence & security systems"
+  },
+  {
+   "id": "energy_resources",
+   "label": "Energy, mining & resources"
+  },
+  {
+   "id": "architecture_design",
+   "label": "Architecture & industrial design"
+  }
+ ],
+ "career_roles": [
+  {
+   "id": "systems_engineer",
+   "label": "Systems engineer"
+  },
+  {
+   "id": "digital_engineer",
+   "label": "Digital engineer / digital twin engineer"
+  },
+  {
+   "id": "simulation_engineer",
+   "label": "Simulation / CAE engineer"
+  },
+  {
+   "id": "design_engineer",
+   "label": "CAD / design engineer"
+  },
+  {
+   "id": "robotics_engineer",
+   "label": "Robotics & autonomy engineer"
+  },
+  {
+   "id": "embedded_engineer",
+   "label": "Embedded / electronics engineer"
+  },
+  {
+   "id": "data_iot_engineer",
+   "label": "Data & IoT engineer"
+  },
+  {
+   "id": "visualisation_developer",
+   "label": "Visualisation / XR developer"
+  },
+  {
+   "id": "geospatial_analyst",
+   "label": "Geospatial / reality capture specialist"
+  },
+  {
+   "id": "ai_engineer",
+   "label": "AI / ML engineer for engineering"
+  }
+ ],
+ "trl_scale": [
+  {
+   "level": 1,
+   "label": "Idea / paper code",
+   "evidence": "Concept, paper companion or notebook; may not run."
+  },
+  {
+   "level": 2,
+   "label": "Proof of concept",
+   "evidence": "Runs a narrow demo for the author; little or no documentation."
+  },
+  {
+   "level": 3,
+   "label": "Experimental prototype",
+   "evidence": "Demonstrates the core idea; frequent breaking changes; setup is fragile."
+  },
+  {
+   "level": 4,
+   "label": "Early alpha",
+   "evidence": "Others can install it with effort; basic README; few releases; small user base."
+  },
+  {
+   "level": 5,
+   "label": "Alpha in use",
+   "evidence": "Used by early adopters; examples exist; API still changing."
+  },
+  {
+   "level": 6,
+   "label": "Beta",
+   "evidence": "Versioned releases, docs and install instructions; issues get answered; active community."
+  },
+  {
+   "level": 7,
+   "label": "Production-ready",
+   "evidence": "Stable releases, good docs, used in real projects or by companies."
+  },
+  {
+   "level": 8,
+   "label": "Mature & widely adopted",
+   "evidence": "Large community, long track record, stable API, ecosystem of plugins/integrations."
+  },
+  {
+   "level": 9,
+   "label": "Industry standard",
+   "evidence": "De-facto standard in its field (e.g. Blender, ROS 2, OpenFOAM, QGIS)."
+  }
+ ],
+ "teaching_uses": [
+  {
+   "id": "lecture_demo",
+   "label": "Lecture demo"
+  },
+  {
+   "id": "lab_exercise",
+   "label": "Lab / tutorial exercise"
+  },
+  {
+   "id": "student_project",
+   "label": "Student / capstone project"
+  },
+  {
+   "id": "research",
+   "label": "Research / thesis"
+  },
+  {
+   "id": "awareness_only",
+   "label": "Awareness only (too immature or too niche to use in class)"
+  }
+ ]
+}
